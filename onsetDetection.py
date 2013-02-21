@@ -21,9 +21,6 @@ class ODF:
                   self.complex,\
                   self.phase,\
                   self.KLDivergence,\
-                  self.percussiveHFC,\
-                  self.percussiveEnergy,\
-                  self.percussiveDifference,\
                   self.melDifference)
     plotColors = ('b-', 'g-', 'r-', 'c-', 'm-', 'y-', 'k-', 'b--', 'g--', 'r--', 'c--')
     for onsetDetectionAlgorithm, color in zip( algorithms, plotColors ):
