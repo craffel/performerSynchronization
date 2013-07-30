@@ -177,6 +177,5 @@ if __name__ == "__main__":
   import sys
   if len(sys.argv) < 2:
     print "Usage: %s filename.mid" % sys.argv[0]
-  converter = MIDIToAudioAndAnnotations( sys.argv[1] )
-  converter.writeWavFile( os.path.splitext( sys.argv[1] )[0] + ".wav" )
-  converter.writeOnsetsText( os.path.splitext( sys.argv[1] )[0] + ".wav.txt" )
+  converter = MIDIToTestFiles( sys.argv[1] )
+  converter.createMIDITestFiles( '.', 10, 20, [0] )
